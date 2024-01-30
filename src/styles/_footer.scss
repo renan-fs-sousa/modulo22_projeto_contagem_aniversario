@@ -1,0 +1,14 @@
+@use 'variables';
+
+footer{
+    background-color: rgba(variables.$corOverlay, .8);
+
+    p {
+        color: variables.$corDeTexto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,73 @@
+@use './variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/gatsby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+        text-align: center;
+        
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$corOverlay;
+        content: '';
+        opacity: .7;
+    }
+    
+    &__text {
+        margin-top: 24px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 800;
+        text-align: center;
+
+        .container__contador {
+    
+            &__item {
+    
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                max-width: 100%;
+                text-align: center;
+                margin-top: 54px;
+                margin-bottom: 18px;
+
+                @media (max-width: 640px) {
+
+                    & {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+                
+                li {
+                    display: grid;
+                    margin-bottom: 36px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+        
+    }
+
+}

@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade - Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-    <div class="container">
-
-    </div>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__text">Olá, você está convidado para meu aníversário!</h1>
+            <p class="hero__text">
+                Contagem regressiva: 
+                <span id="contador" class="container__contador">
+                </span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Minha casa
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Não tem preço
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data</b>
+                        30/03
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">
+                    Confirmar presença!
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="party party--churrasco">
+        <div class="container" data-aos="fade-right">
+            <div class="party__details">
+                <h2 class="party__details__title">O melhor churrasco do mundo</h2>
+                <p class="party__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque veritatis totam error laboriosam at quia accusamus dolorum. Neque porro veniam totam eum aliquam, corrupti, ipsa veritatis, nihil eos magni maiores!
+                </p>
+            </div>
+            <img class="party__image" src="./images/churrasco.jpg" alt="Churrasco">
+        </div>
+    </section>
+    <section class="party party--show party--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="party__details">
+                <h2 class="party__details__title">Show ao vivo com melhor cantor da atualidade</h2>
+                <p class="party__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate velit magni. Rerum excepturi numquam velit! Repellendus in porro iusto, nihil facilis, voluptas, culpa minus itaque quod saepe voluptate sit?
+                </p>
+            </div>
+            <img class="party__image" src="./images/show.jpg" alt="Show">
+        </div>
+    </section>
+    <section class="party party--influencer">
+        <div class="container" data-aos="fade-right">
+            <div class="party__details">
+                <h2 class="party__details__title">Influencers para agitar a galera</h2>
+                <p class="party__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cumque blanditiis accusantium eaque possimus saepe quos aliquid! Deleniti nobis cumque recusandae delectus nam quod, similique expedita deserunt? Consectetur, nulla cumque?
+                </p>
+            </div>
+            <img class="party__image" src="./images/neto.jpg" alt="Influencer">
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>
+                &copy; By - Renan Sousa
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
-</html>l
+
+</html>
