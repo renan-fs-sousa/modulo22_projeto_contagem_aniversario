@@ -32,7 +32,7 @@ const contaAsHoras = function() {
         <ul class="container__contador__item">
         <li>
         <h2>${diasAteONiver}</h2>
-        <span>dias
+        <span>dias</span>
         </li>
         <li>
         <h2>${horasAteONiver}</h2>
